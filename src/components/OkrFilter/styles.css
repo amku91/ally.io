@@ -1,0 +1,11 @@
+
+.label {
+  color: var(--secondary);
+}
+
+.select {
+  height: 32px;
+  /* background: var(--primary); */
+  margin-left: calc(var(--default-unit) * 2);
+  border-radius: var(--border-radius);
+}

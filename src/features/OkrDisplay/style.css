@@ -1,0 +1,90 @@
+@import url("../../styles/theme/palette.css");
+@import url("../../styles/theme/layout.css");
+
+/* @value --primary from "../../styles/theme/light/"; */
+
+.okr-display {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+}
+
+.okr-display .okr-container {
+  /* width: fit-content; */
+  max-width: 60%;
+  min-width: 50%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 2px solid var(--primary);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+}
+
+@media only screen and (max-width: 900px) {
+  .okr-display .okr-container {
+    max-width: none;
+    min-width: inherit;
+    padding:  var(--default-unit);
+    margin: 0;
+  }
+}
+
+.okr-display .okr-filter-error {
+  width: 100%;
+  text-align: center;
+  color: var(--error);
+}
+
+.okr-display .display-box-container {
+  width: 100%;
+  margin-bottom: var(--default-margin);
+}
+
+.okr-display .display-box-first {
+  position: absolute;
+  padding-top: var(--default-margin);
+  padding-left: var(--default-margin);
+  cursor: pointer;
+  width: calc(var(--default-unit) * 8);
+  height: calc(var(--default-unit) * 8);
+  text-align: center;
+  /* width: 15%; */
+}
+
+.okr-display .display-box-second {
+  /* width: 85%; */
+  margin-left: calc(4 * var(--default-margin));
+}
+
+.okr-display .tile-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.okr-display .tile-text {
+  margin-left: var(--default-margin);
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.okr-filter-container {
+  width: 100%;
+  text-align: center;
+  height: calc(var(--default-unit) * 5);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background: var(--white);
+  z-index: 1;
+  padding: var(--default-unit);
+}

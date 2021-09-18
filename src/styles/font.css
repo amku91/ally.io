@@ -1,0 +1,6 @@
+/**
+ * This File can be use to import all the fonts.
+ * We are using direct import from google as of now.
+ Feel free ot import from app relative URL if you have downloaded on local
+ */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");

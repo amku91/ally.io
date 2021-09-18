@@ -1,0 +1,65 @@
+.timeline {
+  width: 100%;
+  height: max-content;
+}
+.timeline .box {
+  width: 100%;
+  /* height: 509px; */
+  margin-top: var(--default-margin);
+  margin-left: calc(var(--default-margin) / 2);
+}
+
+.timeline .box .container {
+  width: 100%;
+  /* height: 357px; */
+  display: flex;
+}
+
+/* .timeline .box .container .lines {
+} */
+
+.timeline .box .container .lines .hline {
+  width: 16px;
+  height: 14px;
+  background: #d1d6e6;
+  height: 2px;
+  margin-left: 5px;
+}
+
+.timeline .box .container .lines .vline {
+  height: 100px;
+  width: 2px;
+  background: #d1d6e6;
+  margin-left: 5.3px;
+}
+
+.timeline .child-tile-container {
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.timeline .tile-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  margin-left: calc(var(--default-margin) * 3);
+}
+
+.timeline .tile-icon {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.timeline.tile-text {
+  margin-left: var(--default-margin);
+  cursor: pointer;
+}
+
+.timeline .child-tile {
+  margin-left: var(--default-margin);
+  transform: translateY(-50px);
+}

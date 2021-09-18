@@ -1,0 +1,9 @@
+@import url("./palette.css");
+/*Typography related css*/
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    font-style: normal;
+    line-height: 1.1em;
+    margin-bottom: 0.75em;
+    font-weight: 700;
+}
