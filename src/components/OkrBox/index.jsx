@@ -23,7 +23,8 @@ export function OkrBox({ parentData, childData }) {
 
   return (
     <div className="timeline">
-      <div className="box">
+      <div className="box">{childData.length === 0 ?
+        <div>No child okr found.</div> :
         <div className="container">
           <div className="lines">
             {childData.map((childNode, key) => {
@@ -59,6 +60,7 @@ export function OkrBox({ parentData, childData }) {
             </div>
           </div>
         </div>
+      }
       </div>
     </div >
   );
