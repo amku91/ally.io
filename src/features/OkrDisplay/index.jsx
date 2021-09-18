@@ -65,6 +65,9 @@ export function OkrBaseDisplay() {
           : isError ? 
           <div className="okr-filter-error">Sorry, Something went wrong. Please try after some time.</div> 
           :
+          okrData.length === 0 ? 
+          <div className="okr-filter-empty">No OKR found.</div> 
+          :
           <Fragment>
             <div className="okr-filter-container">
               <OkrFilter />

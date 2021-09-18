@@ -33,7 +33,7 @@
   .okr-display .okr-container {
     max-width: none;
     min-width: inherit;
-    padding:  var(--default-unit);
+    padding: var(--default-unit);
     margin: 0;
   }
 }
@@ -44,10 +44,10 @@
   color: var(--error);
 }
 
-.okr-display .okr-filter-empty{
+.okr-display .okr-filter-empty {
   width: 100%;
-text-align: center;
-color: var(--primary);
+  text-align: center;
+  color: var(--primary);
 }
 
 .okr-display .display-box-container {
